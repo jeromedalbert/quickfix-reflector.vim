@@ -87,6 +87,9 @@ Example: >
 This event is sent after making a replacement and writing the corresponding
 buffer.
 
+                                                          *QfReplacementsDone*
+This event is sent after all replacements are done.
+
 
 ==============================================================================
 vim:tw=78:ts=8:ft=help:norl:

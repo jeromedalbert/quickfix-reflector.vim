@@ -188,6 +188,9 @@ function! s:Replace(changes)
 		echo ''
 		echohl None
 	endif
+  if successfulChanges > 0
+    silent doautocmd User QfReplacementsDone
+  endif
 endfunction
 
 function! s:FindCommonContext(qfOriginal, qfChangedVersion, lineInFile)
